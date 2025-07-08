@@ -6,6 +6,8 @@ const parser = new Parser({
   },
 });
 
+export const dynamic = "force-dynamic";
+
 export default async function Page() {
   const feed = await parser.parseURL(
     "https://note.com/kind_seal2488/m/m0205f07dde2f/rss"
