@@ -6,12 +6,18 @@ const parser = new Parser({
   },
 });
 
+function getNoteFeed() {
+  if (!process.env.NEXT_PUBLIC_NOTE_RSS_URL) {
+    throw new Error(`process.env.NEXT_PUBLIC_NOTE_RSS_URL is required`);
+  }
+
+  return parser.parseURL(process.env.NEXT_PUBLIC_NOTE_RSS_URL);
+}
+
 export const dynamic = "force-dynamic";
 
 export default async function Page() {
-  const feed = await parser.parseURL(
-    "https://note.com/kind_seal2488/m/m0205f07dde2f/rss"
-  );
+  const feed = await getNoteFeed();
 
   return (
     <div className="m-20">
