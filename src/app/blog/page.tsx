@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     title: "Blog openGraph.title",
     description: "Blog openGraph.description",
     images: "/ogp-blog.png",
+    siteName: "Blog openGraph.siteName",
+    url: "https://example.com/",
   },
 };
 export default function Page() {
