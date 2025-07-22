@@ -1,8 +1,8 @@
-import { Metadata } from "next";
+import { createMeta } from "@/create-meta";
 
-export const metadata: Metadata = {
+export const metadata = createMeta({
   title: "About title",
-};
+});
 
 export default function Page() {
   return (

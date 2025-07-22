@@ -1,7 +1,7 @@
-import { Metadata } from "next";
 import "./globals.css";
+import { createMeta } from "@/create-meta";
 
-export const metadata: Metadata = {
+export const metadata = createMeta({
   title: "Home title",
   description: "Home description",
   openGraph: {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     title: "Home openGraph.title",
     description: "Home openGraph.description",
   },
-};
+});
 
 export default function RootLayout({
   children,
