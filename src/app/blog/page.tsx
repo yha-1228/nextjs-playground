@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Blog openGraph.title",
     description: "Blog openGraph.description",
+    images: "/ogp-blog.png",
   },
 };
 export default function Page() {

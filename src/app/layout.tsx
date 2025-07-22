@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Home openGraph.title",
     description: "Home openGraph.description",
+    images: "/ogp-base.png",
   },
 };
 
